@@ -29,7 +29,7 @@ class MindMapComposite:
             print(' ' * indent + str(self))
             indent += 2
         else:
-            print('' * indent + str(self))
+            print(' ' * indent + str(self))
 
         for child in self.children:
             child.display(indent + 2)
